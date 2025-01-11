@@ -10,6 +10,8 @@
     src: url("../fonts/OpenSans-Light.ttf");
 }
 
+/*TEXT*/
+
 h1 {
     font-family: "Iglets";
     font-size: 150px;
@@ -30,6 +32,8 @@ p {
     line-height: 30px;
 }
 
+/*******************************************************************/
+
 .dark-back {
     background-color: #1E1E1E;
 }
@@ -46,6 +50,8 @@ p {
     padding: 0 150px;
 }
 
+/*HEADER*/
+
 header nav {
     padding: 150px 0 100px 0;
 }
@@ -59,6 +65,10 @@ nav a {
 nav ul li {
     margin-bottom: 10px;
 }
+
+/****************************************************************/
+
+/*INTRO*/
 
 .intro-content{
     position: relative;
@@ -103,4 +113,74 @@ nav ul li {
     position: absolute;
     left: 70px;
     bottom: 25%;
+}
+
+/*****************************************************************/
+
+/*TOP-PROJECTS*/
+
+section.top-projects {
+    padding-top: 150px;
+}
+
+.projects-content {
+    padding: 0 150px;
+}
+
+.projects-header {
+    margin-bottom: 100px;
+    padding-left: 15%;
+}
+
+.projects-header-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-projects-main img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.top-project-main-text {
+    padding-left: 15%;
+}
+
+.top-project-main-text h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    border: #E7E7E5 1px solid;
+}
+
+.top-projects-other {
+    margin-top: 150px;
+}
+
+.project-item-index, .project-item-text, .project-item-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-item-index {
+    border-right: #E7E7E5 1px solid;
+    width: 20%;
+    align-items: center;
+}
+
+.project-item-text {
+    padding-left: 50px;
+}
+
+.project-item-image {
+    align-items: center;
+}
+
+.project-item-image img {
+    height: 80%;
 }
