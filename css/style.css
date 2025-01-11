@@ -10,6 +10,32 @@
     src: url("../fonts/OpenSans-Light.ttf");
 }
 
+@media only screen and (max-width: 1000px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+}
+
+.to-main {
+    position: fixed;
+    background-image: url("../images/up.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    left: 10px;
+    transition: 1s;
+}
+
+.to-main:hover {
+    transform: scale(1.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*TEXT*/
 
 h1 {
@@ -30,6 +56,12 @@ p {
     font-family: "Open Sans";
     font-size: 20px;
     line-height: 30px;
+}
+
+a {
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #1E1E1E;
 }
 
 /*******************************************************************/
@@ -54,12 +86,6 @@ p {
 
 header nav {
     padding: 150px 0 100px 0;
-}
-
-nav a {
-    font-family: "Open Sans";
-    font-size: 20px;
-    color: #1E1E1E;
 }
 
 nav ul li {
@@ -183,4 +209,81 @@ section.top-projects {
 
 .project-item-image img {
     height: 80%;
+}
+
+/****************************************************************/
+
+/*SERVICES*/
+
+section.services {
+    padding-top: 150px;
+}
+
+section.services h1 {
+    padding-left: 150px;
+}
+
+.services-list {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-list-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-list-row .services-item {
+    width: 350px;
+}
+
+.services-list-row .services-item {
+    padding: 30px;
+}
+
+.services-list-row .services-item p {
+    margin: 30px 0;
+}
+
+/*****************************************************************/
+
+/*CONTACTS*/
+
+section.contacts {
+    padding: 150px 0;
+}
+
+section.contacts h1 {
+    padding-left: 150px;
+    margin-bottom: 100px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts-list-column .contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list-column .contacts-item:first-child {
+    margin-bottom: 100px;
+}
+
+.contacts-list-column .contacts-item img {
+    margin-right: 50px;
+}
+
+/*****************************************************************/
+
+footer {
+    padding: 50px 0;
+}
+
+footer h2 {
+    text-align: right;
 }
