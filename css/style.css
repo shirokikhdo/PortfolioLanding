@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Iglets";
+    font-style: normal;
+    src: url("../fonts/Iglets.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+h1 {
+    font-family: "Iglets";
+    font-size: 150px;
+}
+
+h1.index {
+    font-size: 75px;
+}
+
+h2 {
+    font-family: "Open Sans";
+    font-size: 30px;
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.dark-back {
+    background-color: #1E1E1E;
+}
+
+.dark-back h1, .dark-back h2, .dark-back p {
+    color: white;
+}
+
+.light-back {
+    background-color: #E7E7E5;
+}
+
+.wrapper {
+    padding: 0 150px;
+}
+
+header nav {
+    padding: 150px 0 100px 0;
+}
+
+nav a {
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #1E1E1E;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+.intro-content{
+    position: relative;
+    padding-top: 100px;
+}
+
+.main-header {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 1;
+}
+
+.author-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author-description .my-name img {
+    height: 600px;
+}
+
+.author-description .my-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.author-description .about-me img {
+    height: 900px;
+    width: 650px;
+    margin-bottom: -50px;
+}
+
+.author-description .about-me {
+    position: relative;
+    overflow: hidden;
+}
+
+.author-description .about-me p {
+    position: absolute;
+    left: 70px;
+    bottom: 25%;
+}
